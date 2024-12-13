@@ -1,6 +1,6 @@
 {
-    "title": "Freelancer",
-    "name": "startbootstrap-freelancer",
+    "title": "Exporra",
+    "name": "Exporra",
     "version": "7.0.7",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
@@ -12,7 +12,7 @@
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
-    "description": "A freelancer portfolio HTML theme for Bootstrap.",
+    "description": "Exporra",
     "keywords": [
         "css",
         "sass",

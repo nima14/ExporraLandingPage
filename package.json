@@ -35,7 +35,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-freelancer.git"
+        "url": "https://github.com/nima14/ExporraLandingPage.git"
     },
     "dependencies": {
         "bootstrap": "5.2.3"

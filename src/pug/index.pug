@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Freelancer - Start Bootstrap Theme
+        title Exporra
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -28,18 +28,20 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
             .container
-                a.navbar-brand(href='#page-top') Start Bootstrap
+                a.navbar-brand(href='#page-top') Exporra
                 button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu 
                     i.fas.fa-bars
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#portfolio') Portfolio
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#what-we-offer') What We Offer
+                        li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#why-exporra') Why Exporra
                         li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') About
                         li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact') Contact
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#launch') Launch
 
         // Masthead
         header.masthead.bg-primary.text-white.text-center
@@ -47,7 +49,7 @@ html(lang='en')
                 // Masthead Avatar Image
                 img.masthead-avatar.mb-5(src='assets/img/avataaars.svg', alt='...')
                 // Masthead Heading
-                h1.masthead-heading.text-uppercase.mb-0 Start Bootstrap
+                h1.masthead-heading.text-uppercase.mb-0 Exporra
                 // Icon Divider
                 .divider-custom.divider-light
                     .divider-custom-line
@@ -55,71 +57,57 @@ html(lang='en')
                         i.fas.fa-star
                     .divider-custom-line
                 // Masthead Subheading
-                p.masthead-subheading.font-weight-light.mb-0 Graphic Artist - Web Designer - Illustrator
+                p.masthead-subheading.font-weight-light.mb-0 Simplify Compliance. Empower Trade.
 
-        // Portfolio Section
-        section#portfolio.page-section.portfolio
+   
+        // What We Offer Section
+        section#what-we-offer.page-section.bg-light.text-dark.mb-0
             .container
-                // Portfolio Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Portfolio
+                // About Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-dark What We Offer
                 // Icon Divider
                 .divider-custom
                     .divider-custom-line
                     .divider-custom-icon
                         i.fas.fa-star
                     .divider-custom-line
-                // Portfolio Grid Items
-                .row.justify-content-center
-                    // Portfolio Item 1
-                    .col-md-6.col-lg-4.mb-5
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal1')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cabin.png', alt='...')
-                    // Portfolio Item 2
-                    .col-md-6.col-lg-4.mb-5
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cake.png', alt='...')
-                    // Portfolio Item 3
-                    .col-md-6.col-lg-4.mb-5
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/circus.png', alt='...')
-                    // Portfolio Item 4
-                    .col-md-6.col-lg-4.mb-5.mb-lg-0
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/game.png', alt='...')
-                    // Portfolio Item 5
-                    .col-md-6.col-lg-4.mb-5.mb-md-0
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/safe.png', alt='...')
-                    // Portfolio Item 6
-                    .col-md-6.col-lg-4
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/submarine.png', alt='...')
+                //  What We Offer Section Content
+                .row
+                    .col-lg-6.mx-auto
+                            ul.lead
+                                li Automated ECCN and HS Code Classification: Our AI assigns and verifies product classifications, saving you time and minimizing errors.
+                                li Continuous Monitoring: Stay updated on regulatory changes that might impact your products, ensuring your classifications are always accurate.
+                                li Risk-Free Screening: Conduct Know Your Customer (KYC) checks on clients and partners, detecting potential sanctions risks before they become a problem.
+                                li End-to-End Trade Compliance: Manage your compliance needs from one centralized platform—effortlessly.
 
-        // About Section
-        section#about.page-section.bg-primary.text-white.mb-0
+
+        // Why Exporra Section
+        section#why-exporra.page-section.bg-primary.text-white.mb-0
             .container
-                // About Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-white About
+                // Why Exporra Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-white Why Exporra?
                 // Icon Divider
                 .divider-custom.divider-light
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                //  What We Offer Section Content
+                .row
+                    .col-lg-6.mx-auto
+                            ul.lead
+                                li Accuracy You Can Trust: Our AI doesn’t just automate—it double-checks and validates your classifications to ensure you meet international standards.
+                                li Risk Mitigation: Stay ahead of potential compliance issues with proactive monitoring and alerts.
+                                li Efficient Solutions: Streamline compliance, reduce costs, and save valuable time, all while protecting your reputation.
+                                li Peace of Mind: With Exporra, you can trust that your products are classified correctly and your processes are fully compliant.
+
+        // About Section
+        section#about.page-section.bg-light.text-dark.mb-0
+            .container
+                // About Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-dark About
+                // Icon Divider
+                .divider-custom
                     .divider-custom-line
                     .divider-custom-icon
                         i.fas.fa-star
@@ -128,146 +116,176 @@ html(lang='en')
                 .row
                     .col-lg-4.ms-auto
                         p.lead
-                            | Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
+                            | Driven by Excellence.  <br> 
+                            | United for a Safer World. <br> 
+                            | At Exporra, we’re more than just a team. We’re a mission-driven family of expert programmers and experienced lawyers. Together, we’ve combined cutting-edge technology with deep regulatory expertise to create a platform that does more than streamline compliance.<br> 
+                            | Our goal is to help businesses: <br> 
+                            
+                            | Stay ahead of complex global regulations. <br> 
+                            | Save time, resources, and money. <br> 
+                            | Operate responsibly in an ever-changing world. <br> 
                     .col-lg-4.me-auto
                         p.lead
-                            | You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
-                // About Section Button
-                .text-center.mt-4
-                    a.btn.btn-xl.btn-outline-light(href='https://startbootstrap.com/theme/freelancer/')
-                        i.fas.fa-download.me-2
-                        | Free Download!
+                            | But our vision goes beyond business.<br>
+                            | We believe in being <strong>Warriors of Peace</strong>. Every line of code and every compliance solution we design is built to ensure that products stay out of the wrong hands. 
+                            | <br>By empowering companies to follow international regulations, we contribute to a safer world—one where trade fosters growth, not conflict.
+                            | <br>Every day, we work to build a platform that safeguards your business while supporting global stability and peace. Because at Exporra, we’re not just solving problems; we’re creating solutions that matter.
 
-        // Contact Section
-        section#contact.page-section
+
+        // Launch Section
+        section#launch.page-section.bg-primary.text-white.mb-0
             .container
-                // Contact Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Me
+                // About Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-white Launch
                 // Icon Divider
-                .divider-custom
+                .divider-custom.divider-light
                     .divider-custom-line
                     .divider-custom-icon
                         i.fas.fa-star
                     .divider-custom-line
-                // Contact Section Form
-                .row.justify-content-center
-                    .col-lg-8.col-xl-7
-
-                        // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *
-                        // * * * * * * * * * * * * * * *
-
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
-
-                        form#contactForm(data-sb-form-api-token='API_TOKEN')
-
-                            // Name input
-                            .form-floating.mb-3
-                                input#name.form-control(
-                                    type='text',
-                                    placeholder='Enter your name...',
-                                    data-sb-validations='required'
-                                )
-                                label(for='name') Full name
-                                .invalid-feedback(data-sb-feedback='name:required')
-                                    | A name is required.
-
-                            // Email address input
-                            .form-floating.mb-3
-                                input#email.form-control(
-                                    type='email',
-                                    placeholder='name@example.com',
-                                    data-sb-validations='required,email'
-                                )
-                                label(for='email') Email address
-                                .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
-                                .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
-
-                            // Phone number input
-                            .form-floating.mb-3
-                                input#phone.form-control(
-                                    type='tel',
-                                    placeholder='(123) 456-7890',
-                                    data-sb-validations='required'
-                                )
-                                label(for='phone') Phone number
-                                .invalid-feedback(data-sb-feedback='phone:required')
-                                    | A phone number is required.
-
-                            // Message input
-                            .form-floating.mb-3
-                                textarea#message.form-control(
-                                    type='text',
-                                    placeholder='Enter your message here...',
-                                    style='height: 10rem;',
-                                    data-sb-validations='required'
-                                )
-                                label(for='message') Message
-                                .invalid-feedback(data-sb-feedback='message:required')
-                                    | A message is required.
-
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
-
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3
-                                    .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
-                                    br
-                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
-
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3 Error sending message!
-
-                            // Submit Button
-                            button#submitButton.btn.btn-primary.btn-xl.disabled(type='submit') Send
-
-        // Footer
-        footer.footer.text-center
-            .container
+                // About Section Content
                 .row
-                    // Footer Location
-                    .col-lg-4.mb-5.mb-lg-0
-                        h4.text-uppercase.mb-4 Location
-                        p.lead.mb-0
-                            | 2215 John Daniel Drive
+                    .col-lg-6.mx-auto
+                        p.lead
+                            | The future of trade compliance is here. Exporra launches in July 2025,
+                            and we invite you to be part of this transformation.
                             br
-                            | Clark, MO 65243
-                    // Footer Social Icons
-                    .col-lg-4.mb-5.mb-lg-0
-                        h4.text-uppercase.mb-4 Around the Web
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-facebook-f
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-twitter
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-linkedin-in
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-dribbble
-                    // Footer About Text
-                    .col-lg-4
-                        h4.text-uppercase.mb-4 About Freelancer
-                        p.lead.mb-0
-                            | Freelance is a free to use, MIT licensed Bootstrap theme created by 
-                            a(href='http://startbootstrap.com') Start Bootstrap
-                            | .
+                            | Interested in simplifying your compliance and reducing risks? 
+                            br
+                            | Contact us at 
+                            a.text-white(href="mailto:Info@exporra.com") Info@exporra.com
+                            |  to learn more or secure early access to our platform.
+
+        //- // Contact Section
+        //- section#contact.page-section
+        //-     .container
+        //-         // Contact Section Heading
+        //-         h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Me
+        //-         // Icon Divider
+        //-         .divider-custom
+        //-             .divider-custom-line
+        //-             .divider-custom-icon
+        //-                 i.fas.fa-star
+        //-             .divider-custom-line
+        //-         // Contact Section Form
+        //-         .row.justify-content-center
+        //-             .col-lg-8.col-xl-7
+
+        //-                 // * * * * * * * * * * * * * * *
+        //-                 // * * SB Forms Contact Form * *
+        //-                 // * * * * * * * * * * * * * * *
+
+        //-                 // This form is pre-integrated with SB Forms.
+        //-                 // To make this form functional, sign up at
+        //-                 // https://startbootstrap.com/solution/contact-forms
+        //-                 // to get an API token!
+
+        //-                 form#contactForm(data-sb-form-api-token='API_TOKEN')
+
+        //-                     // Name input
+        //-                     .form-floating.mb-3
+        //-                         input#name.form-control(
+        //-                             type='text',
+        //-                             placeholder='Enter your name...',
+        //-                             data-sb-validations='required'
+        //-                         )
+        //-                         label(for='name') Full name
+        //-                         .invalid-feedback(data-sb-feedback='name:required')
+        //-                             | A name is required.
+
+        //-                     // Email address input
+        //-                     .form-floating.mb-3
+        //-                         input#email.form-control(
+        //-                             type='email',
+        //-                             placeholder='name@example.com',
+        //-                             data-sb-validations='required,email'
+        //-                         )
+        //-                         label(for='email') Email address
+        //-                         .invalid-feedback(data-sb-feedback='email:required')
+        //-                             | An email is required.
+        //-                         .invalid-feedback(data-sb-feedback='email:email')
+        //-                             | Email is not valid.
+
+        //-                     // Phone number input
+        //-                     .form-floating.mb-3
+        //-                         input#phone.form-control(
+        //-                             type='tel',
+        //-                             placeholder='(123) 456-7890',
+        //-                             data-sb-validations='required'
+        //-                         )
+        //-                         label(for='phone') Phone number
+        //-                         .invalid-feedback(data-sb-feedback='phone:required')
+        //-                             | A phone number is required.
+
+        //-                     // Message input
+        //-                     .form-floating.mb-3
+        //-                         textarea#message.form-control(
+        //-                             type='text',
+        //-                             placeholder='Enter your message here...',
+        //-                             style='height: 10rem;',
+        //-                             data-sb-validations='required'
+        //-                         )
+        //-                         label(for='message') Message
+        //-                         .invalid-feedback(data-sb-feedback='message:required')
+        //-                             | A message is required.
+
+        //-                     // Submit success message
+        //-                     //
+        //-                     // This is what your users will see when the form
+        //-                     // has successfully submitted
+
+        //-                     #submitSuccessMessage.d-none
+        //-                         .text-center.mb-3
+        //-                             .fw-bolder Form submission successful!
+        //-                             | To activate this form, sign up at
+        //-                             br
+        //-                             a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+
+        //-                     // Submit error message
+        //-                     //
+        //-                     // This is what your users will see when there is
+        //-                     // an error submitting the form
+
+        //-                     #submitErrorMessage.d-none
+        //-                         .text-center.text-danger.mb-3 Error sending message!
+
+        //-                     // Submit Button
+        //-                     button#submitButton.btn.btn-primary.btn-xl.disabled(type='submit') Send
+
+        //- // Footer
+        //- footer.footer.text-center
+        //-     .container
+        //-         .row
+        //-             // Footer Location
+        //-             .col-lg-4.mb-5.mb-lg-0
+        //-                 h4.text-uppercase.mb-4 Location
+        //-                 p.lead.mb-0
+        //-                     | 2215 John Daniel Drive
+        //-                     br
+        //-                     | Clark, MO 65243
+        //-             // Footer Social Icons
+        //-             .col-lg-4.mb-5.mb-lg-0
+        //-                 h4.text-uppercase.mb-4 Around the Web
+        //-                 a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+        //-                     i.fab.fa-fw.fa-facebook-f
+        //-                 a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+        //-                     i.fab.fa-fw.fa-twitter
+        //-                 a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+        //-                     i.fab.fa-fw.fa-linkedin-in
+        //-                 a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+        //-                     i.fab.fa-fw.fa-dribbble
+        //-             // Footer About Text
+        //-             .col-lg-4
+        //-                 h4.text-uppercase.mb-4 About Freelancer
+        //-                 p.lead.mb-0
+        //-                     | Freelance is a free to use, MIT licensed Bootstrap theme created by 
+        //-                     a(href='http://startbootstrap.com') Start Bootstrap
+        //-                     | .
 
         // Copyright Section
         div.copyright.py-4.text-center.text-white
             .container
-                small Copyright &copy; Your Website 2023
+                small Copyright &copy; Exporra 2024
 
         // Portfolio Modals
         include includes/portfolio-modal-1.pug

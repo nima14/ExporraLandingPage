@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://exporra.com/*"
+  to = "https://www.exporra.com/:splat"
+  status = 301
+  force = true

@@ -28,3 +28,20 @@ html {
         }
     }
 }
+
+.lead strong, .lead b {
+    font-weight: bold; // Ensure strong and b tags are bold
+}
+
+.lead-paragraph {
+    padding-left: 2rem; // Match the ul padding
+    font-size: 1.25rem; // Ensure the font size matches
+    font-weight: 300; // Ensure the font weight matches
+}
+
+
+.lead-list {
+    padding-left: 4rem; // Match the ul padding
+    font-size: 1.25rem; // Ensure the font size matches
+    font-weight: 300; // Ensure the font weight matches
+}

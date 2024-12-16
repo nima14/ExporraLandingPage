@@ -10844,6 +10844,22 @@ html {
   }
 }
 
+.lead strong, .lead b {
+  font-weight: bold;
+}
+
+.lead-paragraph {
+  padding-left: 2rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.lead-list {
+  padding-left: 4rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
 .divider-custom {
   margin: 1.25rem 0 1.5rem;
   width: 100%;

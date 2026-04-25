@@ -1,6 +1,6 @@
 /*!
 * Start Bootstrap - Exporra v7.0.7 (https://startbootstrap.com/theme/freelancer)
-* Copyright 2013-2024 Start Bootstrap
+* Copyright 2013-2026 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/Exporra/blob/master/LICENSE)
 */
 //

@@ -5,23 +5,113 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='description', content='Exporra is an AI-powered trade compliance platform for automated export classification (ECCN and HS code), sanction screening, denied/restricted party (KYC) checks, and continuous monitoring of OFAC, BIS, EU, and UN sanctions lists.')
+        meta(name='keywords', content='export classification, ECCN classification, HS code classification, sanction screening, denied party screening, restricted party screening, KYC screening, OFAC screening, BIS, EU sanctions list, dual-use goods, trade compliance software')
+        meta(name='author', content='Exporra')
+        meta(name='robots', content='index, follow, max-image-preview:large')
+        meta(name='theme-color', content='#1abc9c')
 
-        title Exporra
+        title Exporra — AI Export Classification (ECCN/HS Code) & Sanction Screening
+
+        // Canonical URL
+        link(rel='canonical', href='https://www.exporra.com/')
+
+        // Open Graph / Facebook
+        meta(property='og:type', content='website')
+        meta(property='og:site_name', content='Exporra')
+        meta(property='og:url', content='https://www.exporra.com/')
+        meta(property='og:title', content='Exporra — AI Export Classification (ECCN/HS Code) & Sanction Screening')
+        meta(property='og:description', content='AI-powered ECCN and HS code classification, sanction screening, and KYC/denied party checks. Simplify trade compliance with continuous monitoring of OFAC, BIS, EU and UN lists.')
+        meta(property='og:image', content='https://www.exporra.com/assets/img/logo.webp')
+        meta(property='og:locale', content='en_US')
+
+        // Twitter
+        meta(name='twitter:card', content='summary_large_image')
+        meta(name='twitter:title', content='Exporra — AI Export Classification & Sanction Screening')
+        meta(name='twitter:description', content='AI-powered ECCN/HS code classification and sanction screening. Continuous monitoring of OFAC, BIS, EU and UN sanctions lists.')
+        meta(name='twitter:image', content='https://www.exporra.com/assets/img/logo.webp')
 
         // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/img/logo.webp')
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='shortcut icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='apple-touch-icon', href='assets/img/logo.webp')
 
-        // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
+        // Performance: preconnect to font hosts
+        link(rel='preconnect', href='https://fonts.googleapis.com')
+        link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+        link(rel='preconnect', href='https://use.fontawesome.com')
 
-        // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+        // Font Awesome icons (CSS version — non render-blocking on first paint)
+        link(rel='stylesheet', href='https://use.fontawesome.com/releases/v6.3.0/css/all.css', crossorigin='anonymous')
+
+        // Google fonts (combined request)
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Lato:400,700,400italic,700italic&display=swap', rel='stylesheet', type='text/css')
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
+
+        // Structured data — Organization
+        script(type='application/ld+json').
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Exporra",
+                "url": "https://www.exporra.com/",
+                "logo": "https://www.exporra.com/assets/img/logo.webp",
+                "description": "AI-powered trade compliance platform for export classification (ECCN, HS code) and sanction/denied party screening.",
+                "email": "Info@exporra.com"
+            }
+
+        // Structured data — SoftwareApplication
+        script(type='application/ld+json').
+            {
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                "name": "Exporra",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web",
+                "url": "https://www.exporra.com/",
+                "description": "Exporra automates ECCN and HS code classification and performs sanction, denied party and KYC screening against OFAC, BIS, EU and UN lists with continuous regulatory monitoring.",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/PreOrder"
+                }
+            }
+
+        // Structured data — FAQ
+        script(type='application/ld+json').
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What is automated ECCN and HS code classification?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Automated ECCN and HS code classification uses AI to analyze product descriptions and technical specifications and assign accurate Export Control Classification Numbers (ECCN) and Harmonized System (HS) codes, ensuring compliance with export control laws."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What is sanction and denied party screening?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sanction and denied/restricted party screening cross-references customers and partners against global watchlists such as OFAC, BIS, EU consolidated sanctions, and UN sanctions lists to detect prohibited transactions before they occur."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How does Exporra keep classifications up to date?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Exporra continuously monitors regulatory changes and sanctions list updates and notifies you when changes affect your products, customers or partners, so your classifications and screening remain accurate."
+                        }
+                    }
+                ]
+            }
 
     body#page-top
 
@@ -37,7 +127,7 @@ html(lang='en')
                         li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#what-we-offer') What We Offer
                         li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#what-we-offer') How It Works
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#how-it-works') How It Works
                         li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#why-exporra') Why Exporra
                         li.nav-item.mx-0.mx-lg-1
@@ -52,7 +142,7 @@ html(lang='en')
         header.masthead.bg-primary.text-black.text-center
             .container.d-flex.align-items-center.flex-column
                 // Masthead Avatar Image
-                img.masthead-avatar.mb-5(src='assets/img/logo.webp', alt='...')
+                img.masthead-avatar.mb-5(src='assets/img/logo.webp', alt='Exporra logo — AI-powered export classification and sanction screening platform', width='225', height='225')
                 // Masthead Heading
                 h1.masthead-heading.text-uppercase.mb-0 Exporra
                 // Icon Divider
@@ -60,14 +150,14 @@ html(lang='en')
                     .divider-custom-line
 
                 // Masthead Subheading
-                p.masthead-subheading.font-weight-light.mb-0 Simplify Compliance. Empower Trade.
+                p.masthead-subheading.font-weight-light.mb-0 AI-Powered Export Classification (ECCN &amp; HS Code) and Sanction Screening
 
    
         // What We Offer Section
         section#what-we-offer.page-section.bg-light.text-dark.mb-0
             .container
                 // What We Offer Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-dark What We Offer
+                h2.page-section-heading.text-center.text-uppercase.text-dark Export Classification &amp; Sanction Screening, Automated
                 // Icon Divider
                 .divider-custom
                     .divider-custom-line
@@ -78,26 +168,26 @@ html(lang='en')
                             ul.lead
                                 
                                     strong Automated ECCN and HS Code Classification: 
-                                    | Our AI-Powered tool assigns product classifications, saving you time and minimizing errors.
+                                    | Our AI-powered export classification tool assigns accurate Export Control Classification Numbers (ECCN) and Harmonized System (HS) codes to your products, saving time and minimizing costly errors.
                                     br
                             
-                                    strong Continuous Monitoring: 
-                                    | Stay updated on regulatory changes that might impact your products, ensuring your classifications are always accurate.
+                                    strong Continuous Sanctions &amp; Regulatory Monitoring: 
+                                    | Stay updated on changes to OFAC, BIS, EU consolidated sanctions and UN sanctions lists, dual-use goods controls, and other export regulations that may impact your products.
                                     br
                             
-                                    strong Risk-Free Screening: 
-                                    | Conduct Know Your Customer (KYC) checks on partners, detecting potential sanctions risks before they become a problem.
+                                    strong Sanction, Denied &amp; Restricted Party Screening: 
+                                    | Run Know Your Customer (KYC), denied party screening and restricted party screening on customers and partners to detect sanctions risks before they become a problem.
                                     br
                             
                                     strong End-to-End Trade Compliance: 
-                                    | Manage your compliance needs from one centralized platform—effortlessly.
+                                    | Manage export classification, sanction screening and audit-ready compliance records from a single centralized platform — effortlessly.
 
 
         // How It Works Section
-        section#why-exporra.page-section.bg-primary.text-black.mb-0
+        section#how-it-works.page-section.bg-primary.text-black.mb-0
             .container
                 // How It Works Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-black How It Works
+                h2.page-section-heading.text-center.text-uppercase.text-black How AI-Powered Export Classification &amp; Screening Works
                 // Icon Divider
                 .divider-custom.divider
                     .divider-custom-line
@@ -109,22 +199,22 @@ html(lang='en')
                                 
                                     strong 1. AI-Powered ECCN and HS Code Classification
                             ul.lead-list
-                                    | Exporra uses advanced large language models to analyze product data and automatically assign accurate ECCN classifications and HS codes. The system evaluates product descriptions, technical specifications, and regulatory requirements to ensure compliance with local and international laws.
+                                    | Exporra uses advanced large language models to analyze product data and automatically assign accurate ECCN classifications and HS codes. The system evaluates product descriptions, technical specifications, and dual-use goods regulations to ensure compliance with local and international export control laws.
                             ul.lead
                                     strong 2. Smart Data Consolidation
                             ul.lead-list
                                     | Exporra organizes and centralizes all product information into a structured, user-friendly database. Data is continuously updated, reducing administrative overhead and ensuring compliance information is always easily accessible.
                             ul.lead                     
-                                    strong 3. KYC Screening and Regulatory Monitoring
+                                    strong 3. KYC, Sanction &amp; Denied Party Screening
                             ul.lead-list
-                                    | Exporra cross-references your customer and partner data with real-time updates on sanctions, embargoes, and regulatory restrictions. The platform’s AI monitors global compliance databases and regulatory changes. If updates impact your products or customers, you’ll receive immediate notifications with actionable insights, enabling you to respond swiftly and effectively.
+                                    | Exporra cross-references your customer and partner data with real-time updates from OFAC, BIS, EU consolidated sanctions, UN sanctions lists, embargoes and other restricted party lists. The platform’s AI monitors global compliance databases and regulatory changes. If updates impact your products or customers, you’ll receive immediate notifications with actionable insights, enabling you to respond swiftly and effectively.
                                     
 
         // Why Exporra Section
         section#why-exporra.page-section.bg-light.text-dark.mb-0
             .container
                 // Why Exporra Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-black Why Exporra?
+                h2.page-section-heading.text-center.text-uppercase.text-black Why Choose Exporra for Trade Compliance?
                 // Icon Divider
                 .divider-custom.divider
                     .divider-custom-line
@@ -365,13 +455,13 @@ html(lang='en')
             .container
                 small Copyright &copy; Exporra 2024
 
-        // Portfolio Modals
-        include includes/portfolio-modal-1.pug
-        include includes/portfolio-modal-2.pug
-        include includes/portfolio-modal-3.pug
-        include includes/portfolio-modal-4.pug
-        include includes/portfolio-modal-5.pug
-        include includes/portfolio-modal-6.pug
+        // Portfolio Modals (unused — Start Bootstrap demo content removed for SEO)
+        //- include includes/portfolio-modal-1.pug
+        //- include includes/portfolio-modal-2.pug
+        //- include includes/portfolio-modal-3.pug
+        //- include includes/portfolio-modal-4.pug
+        //- include includes/portfolio-modal-5.pug
+        //- include includes/portfolio-modal-6.pug
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
